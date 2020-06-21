@@ -1,0 +1,57 @@
+body {
+    background-color: #222;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+.app {
+    width: 90%;
+    max-width: 30rem;
+    margin: 5rem auto;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.option {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 5rem;
+    color: cornflowerblue;
+    transition: transform 250ms ease-in-out;
+}
+    .option:hover {
+        transform: scale(1.1);
+    }
+
+.results {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+}
+    .results div {
+        margin-top: 2rem;
+    }
+    .results span {
+        color: cornflowerblue;
+        font-size: 3rem;
+    }
+
+.past-results {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+}
+
+.winner, .loser {
+    font-size: 3rem;
+}
+    .winner {color: lime}
+    .loser {color: coral}
