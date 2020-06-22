@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #222;
     color: #ddd;
@@ -7,7 +13,10 @@ body {
 .app {
     width: 90%;
     max-width: 30rem;
-    margin: 5rem auto;
+    margin: 0 auto;
+    padding: 3rem;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .options {
@@ -43,15 +52,14 @@ body {
         font-size: 3rem;
     }
 
-.past-results {
+.past-result {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     font-size: 2rem;
+    color: coral;
 }
 
-.winner, .loser {
-    font-size: 3rem;
+.winner {
+    color: lime;
 }
-    .winner {color: lime}
-    .loser {color: coral}
